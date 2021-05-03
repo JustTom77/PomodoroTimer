@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins&display=swap");
+
+:root {
+  --choice-color: #bdc7c9;
+  --choicebox-color: rgb(95, 187, 218);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("./cool-background\ \(2\).png");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.header {
+  position: relative;
+  bottom: 70px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+#header {
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  color: #2b2e4a;
+  text-align: center;
+}
+
+#focus-choice {
+  display: flex;
+}
+
+#pause-choice {
+  display: none;
+}
+#interval-choice {
+  display: none;
+}
+#timer {
+  display: none;
+}
+#pause-timer {
+  display: none;
+}
+#pause-message {
+  display: none;
+}
+#work-message {
+  display: none;
+}
+#finished-message {
+  display: none;
+}
+#start-btn-container {
+  display: none;
+}
+#focus-pause-btn {
+  display: none;
+}
+
+.fa-play {
+  cursor: pointer;
+  color: #fff;
+  font-size: 4rem;
+  margin-top: 30px;
+}
+
+.fa-play:hover {
+  filter: brightness(80%);
+}
+
+.fa-pause {
+  cursor: pointer;
+  cursor: pointer;
+  color: #fff;
+  font-size: 4rem;
+  margin-top: 30px;
+}
+
+.fa-pause:hover {
+  filter: brightness(80%);
+}
+
+/* === NEW STYLE === */
+
+/* == CHOICES CONTAINER == */
+.container {
+  display: flex;
+  flex-direction: column;
+  background: url("./cool-background\ \(5\).png");
+  width: 35%;
+  height: 35vh;
+  margin: 0 auto;
+  color: #fff;
+  justify-content: space-evenly;
+  border-radius: 15px;
+}
+.block-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-h1 h1 {
+  color: var(--choice-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  padding: 15px;
+  font-family: "Nunito", sans-serif;
+}
+
+.block-choices {
+  display: flex;
+  justify-content: center;
+}
+.box2,
+.box3,
+.box4,
+.box5 {
+  display: flex;
+  background: var(--choice-color);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 15px;
+  color: #2b4f60;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2:hover {
+  filter: brightness(80%);
+}
+.box3:hover {
+  filter: brightness(80%);
+}
+.box4:hover {
+  filter: brightness(80%);
+}
+.box5:hover {
+  filter: brightness(80%);
+}
+.box2:active {
+  transform: scale(0.98);
+}
+.box3:active {
+  transform: scale(0.98);
+}
+.box4:active {
+  transform: scale(0.98);
+}
+.box5:active {
+  transform: scale(0.98);
+}
+
+/* == TIMER / PAUSE CONTAINER */
+.timer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 35vh;
+  margin: 0 auto;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 5rem;
+  width: 20%;
+  background: #903749;
+  box-shadow: 5px 5px 15px 3px #000000;
+}
+
+.time-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.btn-box-play,
+.btn-box-pause {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.interval-block {
+  position: absolute;
+  display: flex;
+  font-size: 1.5rem;
+  text-align: center;
+  right: 5%;
+  bottom: 5%;
+}
+
+.interval-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* == PAUSE MESSAGE == */
+
+.pause-message {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 3.5rem;
+  background: #11b89c;
+  border: 2px solid #2b2e4a;
+  position: relative;
+  width: 35%;
+  height: 35vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 3px #000000;
+}
+.pause-message i {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.pause-message i:hover {
+  filter: brightness(80%);
+}
+
+/* == PAUSE TIMER CONTAINER == */
+
+.pause-timer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 35vh;
+  margin: 0 auto;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 5rem;
+  width: 20%;
+  background: #007965;
+  box-shadow: 5px 5px 15px 3px #000000;
+}
+
+.pause-time-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+/* == BACK TO WORK MESSAGE == */
+
+.work-message {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 3.5rem;
+  background: #903749;
+  border: 2px solid #2b2e4a;
+  position: relative;
+  width: 35%;
+  height: 35vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 3px #000000;
+}
+.work-message i {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.work-message i:hover {
+  filter: brightness(80%);
+}
+
+/* == FINISHED MESSAGE == */
+
+.finished-message {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 3.5rem;
+  background: #a685e2;
+  border: 2px solid #2b2e4a;
+  position: relative;
+  width: 35%;
+  height: 35vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 2px black;
+}
+.finished-message i {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.finished-message i:hover {
+  filter: brightness(80%);
+}
+
+/* == MEDIA QUERY == */
+@media screen and (max-width: 600px) {
+  .choice {
+    width: 70vw;
+    height: 75vh;
+  }
+  .choice h1 {
+    margin-bottom: 4rem;
+  }
+  .choices h1 {
+    margin-bottom: 1rem;
+  }
+  .header {
+    font-size: 1.5rem;
+    bottom: 30px;
+  }
+  .pause-timer {
+    width: 90vw;
+  }
+  .pause-timer span {
+    margin: 10px;
+  }
+
+  .pause-message {
+    height: 60vh;
+  }
+
+  .pause-message span {
+    line-height: 100px;
+  }
+  .finished-message {
+    font-size: 2rem;
+    width: 90vw;
+  }
+  .pause-timer i {
+    bottom: 120px;
+  }
+}

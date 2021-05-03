@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="myFavicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <body>
+      <!-- Header -->
+      <div class="header">
+        <h1 id="header">Pomodoro Timer</h1>
+      </div>
+      <!-- Focus Choice -->
+      <div class="choice container" id="focus-choice">
+        <div class="block-h1">
+          <div class="box1"><h1>Choose Focus Time</h1></div>
+          
+        </div>
+        <div class="block-choices">
+<div class="box2" id="focus-one"><h1  title="10 Minutes">10</h1></div>
+<div class="box3" id="focus-two"><h1  title="15 Minutes">15</h1></div>
+<div class="box4" id="focus-three"> <h1  title="20 Minutes">20</h1></div>
+<div class="box5" id="focus-four"><h1  title="25 Minutes">25</h1></div>
+    </div>
+      </div>
+
+      <!-- Pause Choice -->
+      <div class="choice container" id="pause-choice">
+        <div class="block-h1">
+          <div class="box1"><h1>Choose Pause Time</h1></div>
+          
+        </div>
+        <div class="block-choices">
+<div class="box2" id="pause-one"> <h1 title="5 Minutes">5</h1></div>
+<div class="box3" id="pause-two"><h1 title="10 Minutes">10</h1></div>
+<div class="box4"  id="pause-three"> <h1 title="15 Minutes">15</h1></div>
+<div class="box5"  id="pause-four"><h1  title="20 Minutes">20</h1></div>
+    </div>
+      </div>
+
+      <!-- Interval Choice -->
+      <div class="choice container" id="interval-choice">
+        <div class="block-h1">
+          <div class="box1"><h1>Choose Intervals</h1></div>
+          
+        </div>
+        <div class="block-choices">
+<div class="box2" id="interval-one"><h1  title="2 Intervals">2</h1></div>
+<div class="box3"  id="interval-two"><h1 title="3 Intervals">3</h1></div>
+<div class="box4"  id="interval-three" > <h1 title="4 Intervals">4</h1></div>
+<div class="box5"  id="interval-four" ><h1 title="5 Intervals">5</h1></div>
+    </div>
+      </div>
+
+
+      <!-- Timer -->
+    <div class="timer choice timer-container" id="timer">
+      <div class="time-block">
+        <div class="time-box">
+          <span id="minutes"></span>:<span id="seconds"></span>
+        </div>
+      </div>
+      <div class="btn-block">
+        <div class="btn-box-play" id="start-btn">
+          <i class="fas fa-play" title="Start Focus" ></i>
+        </div>
+        <div class="btn-box-pause" id="focus-pause-btn">
+          <i class="fas fa-pause" title="Pause Focus" ></i>
+        </div>
+      </div>
+      <div class="interval-block">
+        <div class="interval-box" id="interval-status">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+   
+      
+      <!-- Pause-Timer -->
+      <div class="pause-timer choice pause-timer-container" id="pause-timer">
+        <div class="pause-time-block">
+          <div class="pause-time-box">
+            <span id="pause-minutes"></span>:<span id="pause-seconds"></span>
+          </div>
+        </div>
+        <div class="btn-block">
+          <div class="btn-box-play" id="pause-btn">
+            <i class="fas fa-play" title="Start Pause" ></i>
+          </div>
+          <div class="btn-box-pause" id="stop-pause-btn">
+            <i class="fas fa-pause" title="Pause" ></i>
+          </div>
+        </div>
+        <div class="interval-block">
+          <div class="interval-box" id="interval-status-pause">
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+   
+      
+        
+      
+      <!-- Pause Message -->
+      <div class="pause-message choice" id="pause-message">
+        <i class="fas fa-times" id="pause-closer"></i>
+        <span> Time for a break! </span>
+      </div>
+      <!-- Back to work Message -->
+      <div class="work-message choice" id="work-message">
+        <i class="fas fa-times" id="work-closer"></i>
+        <span> Back to Work! </span>
+      </div>
+      <!-- Finished Message -->
+      <div class="finished-message choice" id="finished-message">
+        <i class="fas fa-times" id="finish-closer"></i>
+        <span>Congratulations you made it!&#10024</span> 
+      </div>
+    </body>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
